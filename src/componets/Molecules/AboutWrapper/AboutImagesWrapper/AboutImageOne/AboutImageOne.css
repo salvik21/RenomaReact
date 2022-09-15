@@ -1,0 +1,7 @@
+ .aboutImageOne {
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    z-index: 10;
+}
+
