@@ -1,9 +1,0 @@
-.caruselButton{
-    display: flex;
-    flex-wrap: wrap; 
-    position: absolute;
-    top: 330px;
-    margin-left: 20px;
-    justify-content:space-between;
-    width: 40%;
-}

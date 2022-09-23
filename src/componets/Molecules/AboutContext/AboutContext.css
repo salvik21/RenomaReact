@@ -1,0 +1,34 @@
+@import url('./../../../font/Montserrat-Regular.css');
+
+.aboutTitle>h1 {
+    font-size: 38px;
+    letter-spacing: 8px;
+    color: #1e2633;
+    font-family: monospace,sans-serif;
+    margin-bottom: 0;
+}
+
+.aboutParagraph {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #404040;
+    font-weight: 400;
+    font-family: "Montserrat",sans-serif;
+}
+
+.aboutSubtitle {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #985e5b;
+    font-weight: 700;
+    font-family: "Montserrat",sans-serif;
+    padding-bottom: 5px;
+}
+
+.aboutContext {
+    padding-right: 20px;
+    margin-left: 20px;
+}

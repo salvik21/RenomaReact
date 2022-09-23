@@ -1,6 +1,7 @@
 import "./App.css";
+import Test from"./Ttestclick";
 import Nav from "./componets/Organisms/Nav/Nav";
-import Car from "./componets/Organisms/Carusel/Carusel";
+import Carousel from "./componets/Organisms/Carousel/Carousel";
 import About from "./componets/Organisms/About/About";
 import Gallery from "./componets/Organisms/Gallery/Gallery";
 import Footer from "./componets/Organisms/Footer/Footer";
@@ -8,8 +9,10 @@ import Footer from "./componets/Organisms/Footer/Footer";
 function App() {
   return (
     <>
+    {/* <Test> <Car /> </Test> */}
+    
       <Nav />
-      <Car />
+      <Carousel />
       <About />
       <Gallery />
       <Footer />

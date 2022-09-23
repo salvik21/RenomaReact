@@ -1,9 +1,0 @@
-@import url('./../../../../../font/Poppins-SemiBold.css');
-
-.titleCarusel > h1 {
-    font-size: 28px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    font-family: Poppins, sans-serif;
-    padding: 0;
-}

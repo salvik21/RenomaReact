@@ -1,11 +1,11 @@
-import TwoImages from "./AboutTwoImages/AboutTwoImages";
-import Text from "./AboutText/AboutText";
+import AboutImages from "./../../Molecules/AboutImages/AboutImages";
+import AboutContext from "./../../Molecules/AboutContext/AboutContext";
 
 function About() {
     return(
         <div className="about">
-            <TwoImages />
-            <Text />
+            <AboutImages />
+            <AboutContext />
        </div>
     );  
 }

@@ -7,7 +7,7 @@
     height: 58px;
 }
 
-.nav >.titleLogo > h1 {
+.nav > h1 {
     padding-left: 10px;
     font-size: 25px;
     letter-spacing: 3px;

@@ -1,16 +1,17 @@
 import "./Nav.css";
-import Icons from "./Icons/Icons";
-import Renoma from "./../../Molecules/TitleLogo/TitleLogo";
-import CartMenu from "./../../Molecules/CartMenuWrapper/CartMenuWrapper"
+import Icons from "./../../Molecules/Icons/Icons";
+import Renoma from "./../../Atoms/LogoAtom/LogoAtom";
+// import CartMenu from "./../../Molecules/CartMenuWrapper/CartMenuWrapper";
 
 function Nav() {
-    return(
+   return(
+
         <div className="navwrapper">
             <div className="nav">
                 <Renoma />
-                <Icons />
+                <Icons  />
             </div>
-            <CartMenu />
+            {/* <CartMenu /> */}
         </div>  
     );
 }

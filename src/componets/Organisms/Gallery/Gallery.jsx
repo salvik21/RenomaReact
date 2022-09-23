@@ -1,13 +1,17 @@
 import "./Gallery.css";
-import GalleryTitle from "./../../Molecules/GalleryWrapper/GalleryTitlesWrapper/GalleryTitle/GalleryTitle";
-import GalerySubtitle from "../../Molecules/GalleryWrapper/GalleryTitlesWrapper/GallerySubtitle/GallerySubtitle";
-import GalleryImages from "../../Molecules/GalleryWrapper/GalleryImagesWrapper/GalleryImages";
+import GalleryImages from "./../../Molecules/GalleryImages/GalleryImages";
+import Title from "./../../Atoms/Titles/TitleAtom";
+import Subtitle from "./../../Atoms/Subtile/SubtitleAtom";
 
 function Gallery() {
     return(
         <div className="gallery">
-            <GalleryTitle />
-            <GalerySubtitle />
+            <div className="galleryTitle">
+                <Title title="gallery"/>
+            </div>
+            <div className="gallerySubtitle">
+                <Subtitle  subTitle="more about us via photos" />
+            </div>
             <GalleryImages />
         </div>
     );

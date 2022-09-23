@@ -1,16 +1,20 @@
 import "./Footer.css";
-import FooterTitle from "../../Molecules/FooterWrapper/FooterTitlesWrapper/FooterTitle/FooterTitle";
-import FooterCoryright from "./../../Molecules/FooterWrapper/FooterTitlesWrapper/FooterCopyright/FooterCopyright";
-import Logo from "./../../Molecules/TitleLogo/TitleLogo";
-import SocIcons from "./../../Molecules/FooterWrapper/FooterIconWrapper/FooterIcon";
+import Title from "../../Atoms/Titles/TitleAtom";
+import Logo from "../../Atoms/LogoAtom/LogoAtom";
+import SocIcons from "../../Molecules/SocIcons/Socicons";
+import Paragraph from "../../Atoms/Paragraph/ParagraphAtom";
 
 function Footer() {
     return(
         <div className="footer">
-            < FooterTitle />
+            <div className="footerTitle">
+                <Title  title="Follow US:" />
+            </div>
             <SocIcons />
             <Logo />
-            <FooterCoryright />
+            <div className="footerCopyright">
+                <Paragraph  title="Copyright 2015 Renome by estetiq" />
+            </div>
         </div>
     )   
 }

@@ -1,4 +1,29 @@
+@import url(./../../../font/Poppins-SemiBold.css);
+@import url(./../../../font/Montserrat-Regular.css);
+
 .gallery {
     background-color: #fafafa;
     padding: 40px 10px;
+}
+
+.galleryTitle>h1 {
+    font-size: 38px;
+    letter-spacing: 8px;
+    color: #1e2633;
+    text-align: center;
+    font-family: Popins, sans-serif;
+    margin-bottom: 0;
+}
+
+
+
+.gallerySubtitle {
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #985e5b;
+    font-weight: 700;
+    font-family: "Montserrat, sans-serif";
+    text-align: center;
 }
