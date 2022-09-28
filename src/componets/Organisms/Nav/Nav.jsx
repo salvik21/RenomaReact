@@ -1,7 +1,6 @@
 import "./Nav.css";
 import Icons from "./../../Molecules/Icons/Icons";
 import Renoma from "./../../Atoms/LogoAtom/LogoAtom";
-// import CartMenu from "./../../Molecules/CartMenuWrapper/CartMenuWrapper";
 
 function Nav() {
    return(
@@ -11,7 +10,6 @@ function Nav() {
                 <Renoma />
                 <Icons  />
             </div>
-            {/* <CartMenu /> */}
         </div>  
     );
 }

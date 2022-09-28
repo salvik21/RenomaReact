@@ -5,7 +5,7 @@ import CartImage from '../../../image/Cart.png';
 function CartIcon({onClick}) {
 
     return(
-        <div className="cartIcon" >
+        <div className="cart-icon" >
             <img src={CartImage} alt="Cart Image" onClick={onClick} />
         </div>
     );

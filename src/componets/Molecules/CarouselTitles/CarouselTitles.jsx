@@ -4,15 +4,14 @@ import Subtitle from "./../../Atoms/Subtile/SubtitleAtom";
 
 function CarouselTitles() {
     return(
-        <div className="titlsCarousel">
-            <div className="titleCarusel">
+        <div className="titls-carousel">
+            <div className="title-carusel">
                 <Title  title="made with love" />
             </div>
-            <div className="subtitleCarousel">
+            <div className="subtitle-carousel">
             <   Subtitle  subTitle="for you" />
             </div>
         </div>
-
     );
 }
 

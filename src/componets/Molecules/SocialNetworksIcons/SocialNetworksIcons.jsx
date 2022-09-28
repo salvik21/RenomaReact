@@ -1,8 +1,8 @@
-import "./SocIcons.css";
+import "./SocialNetworksIcons.css";
 import TwiterIcon from "./../../../image/twiter.png";
 import FacebookIcon from "./../../../image/facebook.png";
 import GoogleIcon from "./../../../image/google.png";
-import Icon from "./../../Atoms/Icon/IconAtom";
+import Icon from "../../Atoms/Icon/IconAtom";
 
 function SocIcons() {
     const ImgElement=[
@@ -11,7 +11,7 @@ function SocIcons() {
         {id: 3, target: "__blank", href: "https://Google.com ", src: GoogleIcon, alt: "GoogleIcon"},
     ]
     return(
-        <div className="socIcons">
+        <div className="social-networks-icons">
         {ImgElement.map((item) => 
         <a target={item.target} href={item.href}> <Icon src={item.src} alt={item.alt} />
         </a> 

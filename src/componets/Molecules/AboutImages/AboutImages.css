@@ -1,17 +1,17 @@
-.aboutImages {
+.about-images {
   position: relative;
   margin-top: 60px;
   height: 315px;
 }
  
- .aboutFirstImage {
+ .about-first-image {
     position: absolute;
     left: 20px;
     top: 140px;
     z-index: 10;
 }
 
-.aboutSecondImage {
+.about-second-image {
     position: absolute;
     right: 20px;
     z-index: 0;

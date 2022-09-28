@@ -6,11 +6,11 @@ import AboutlSecondImage from "./../../../image/about_img_2.png";
 
 function AboutImages() {
     return(
-        <div className="aboutImages">
-        <div className="aboutFirstImage">
+        <div className="about-images">
+        <div className="about-first-image">
             <Image src={AboutFirstImage} alt="ImageOne"/>   
         </div>
-        <div className="aboutSecondImage">
+        <div className="about-second-image">
             <Image src= {AboutlSecondImage} alt="ImageTwo"/>    
         </div>
         </div>

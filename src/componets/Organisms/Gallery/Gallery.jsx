@@ -6,10 +6,10 @@ import Subtitle from "./../../Atoms/Subtile/SubtitleAtom";
 function Gallery() {
     return(
         <div className="gallery">
-            <div className="galleryTitle">
+            <div className="gallery-title">
                 <Title title="gallery"/>
             </div>
-            <div className="gallerySubtitle">
+            <div className="gallery-subtitle">
                 <Subtitle  subTitle="more about us via photos" />
             </div>
             <GalleryImages />

@@ -6,18 +6,18 @@
     padding: 40px 10px;
 }
 
-.galleryTitle>h1 {
+.gallery-title > h1 {
     font-size: 38px;
     letter-spacing: 8px;
     color: #1e2633;
     text-align: center;
-    font-family: Popins, sans-serif;
+    font-family: Poppins, sans-serif;
     margin-bottom: 0;
 }
 
 
 
-.gallerySubtitle {
+.gallery-subtitle {
     font-size: 11px;
     letter-spacing: 1px;
     line-height: 25px;

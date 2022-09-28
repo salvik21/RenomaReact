@@ -1,18 +1,18 @@
 import "./Footer.css";
 import Title from "../../Atoms/Titles/TitleAtom";
 import Logo from "../../Atoms/LogoAtom/LogoAtom";
-import SocIcons from "../../Molecules/SocIcons/Socicons";
+import SocialNetworksIcons from "../../Molecules/SocialNetworksIcons/SocialNetworksIcons";
 import Paragraph from "../../Atoms/Paragraph/ParagraphAtom";
 
 function Footer() {
     return(
         <div className="footer">
-            <div className="footerTitle">
+            <div className="footer-title">
                 <Title  title="Follow US:" />
             </div>
-            <SocIcons />
+            <SocialNetworksIcons />
             <Logo />
-            <div className="footerCopyright">
+            <div className="footer-copyright">
                 <Paragraph  title="Copyright 2015 Renome by estetiq" />
             </div>
         </div>

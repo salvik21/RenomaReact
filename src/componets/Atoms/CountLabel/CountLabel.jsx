@@ -2,7 +2,7 @@ import "./CountLabel.css";
 
 function CountLabel() {
     return(
-        <div className="countLabel">
+        <div className="count-label">
            <label>2</label>
         </div>
     );

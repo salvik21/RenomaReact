@@ -3,7 +3,7 @@ import CloseImage from '../../../image/CloseIcon.png';
 
 function CloseIcon({onClick}) {
     return(
-        <div className="CloseIcon">
+        <div className="close-icon">
             <img src={CloseImage} alt="Close Image" onClick={onClick} />
         </div>
     );

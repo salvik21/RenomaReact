@@ -1,4 +1,4 @@
-.button img {
+.button > img {
     transform: rotate(180deg);
     width: 35px;
     height: 35px;

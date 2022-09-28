@@ -1,4 +1,4 @@
-.galleryImgWrapper {
+.gallery-img-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,12 +6,12 @@
     padding: 0px;
 }
 
-.galleryImg {
+.gallery-img {
     list-style-type: none;
     flex-basis: 48%;
 }
 
-.galleryImg > img {
+.gallery-img > img {
     object-fit: cover;
     width: 100%;
     height: 100%;

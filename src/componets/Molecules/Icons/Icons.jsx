@@ -2,10 +2,10 @@ import "./Icons.css";
 import Cart from "../../Atoms/CartIcon/CartIcon";
 import Hamburger from "../../Atoms/HamburgerIcon/HamburgerIcon";
 import Close from "../../Atoms/CloseIcon/CloseIcon";
-import Divider from "../../Atoms/Divaider/VerticalDivaider";
+import Divider from "../../Atoms/Divider/VerticalDivider";
 import CountLabel from "../../Atoms/CountLabel/CountLabel";
 
-function Icons ({onClickCart}) {
+function Icons () {
     return(
         <div className="icons">
             <Cart />

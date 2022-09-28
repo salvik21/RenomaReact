@@ -16,11 +16,11 @@
     font-family: "Pacifico";
 }
 
-.footerTitle {
+.footer-title {
     padding-top: 20px;
 }
 
-.footerTitle > h1 {
+.footer-title > h1 {
     font-size: 12px;
     line-height: 25px;
     text-transform: uppercase;
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.footerCopyright>p {
+.footer-copyright > p {
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;

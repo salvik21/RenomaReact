@@ -1,6 +1,6 @@
 @import url('./../../../font/Montserrat-Regular.css');
 
-.aboutTitle>h1 {
+.about-title > h1 {
     font-size: 38px;
     letter-spacing: 8px;
     color: #1e2633;
@@ -8,7 +8,7 @@
     margin-bottom: 0;
 }
 
-.aboutParagraph {
+.about-paragraph {
     width: 100%;
     font-size: 12px;
     letter-spacing: 2px;
@@ -18,7 +18,7 @@
     font-family: "Montserrat",sans-serif;
 }
 
-.aboutSubtitle {
+.about-subtitle {
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -28,7 +28,7 @@
     padding-bottom: 5px;
 }
 
-.aboutContext {
+.about-context {
     padding-right: 20px;
     margin-left: 20px;
 }
