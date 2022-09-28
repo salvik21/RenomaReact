@@ -3,9 +3,8 @@ import Icons from "./../../Molecules/Icons/Icons";
 import Renoma from "./../../Atoms/LogoAtom/LogoAtom";
 
 function Nav() {
-   return(
-
-        <div className="navwrapper">
+   return (
+        <div className="nav-wrapper">
             <div className="nav">
                 <Renoma />
                 <Icons  />
