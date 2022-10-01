@@ -1,12 +1,11 @@
 import "./ForwardButton.css";
-import Image from "../../../Atoms/Icon/IconAtom";
 import ForwardImage from "./../../../../image/forward.png";
 
 
 function ForwardButton() {
-    return(
+    return (
         <div className="forward-button">
-            <Image src= {ForwardImage} alt="Imageone" />
+            <img className="forward-button-image" src={ForwardImage} alt="Imageone" ></img>
         </div>
     );
 }

@@ -1,5 +1,4 @@
-@import url(./../../../font/Pacifico-font.css);
-@import url(./../../../font/Montserrat-Regular.css);
+@import url(./../../../font/Font.css);
 
 .footer {
     width: 100%;
@@ -7,7 +6,7 @@
     background-color: #edeff2;
 }
 
-.footer > h1 {
+.footer-logo {
     font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
@@ -18,24 +17,21 @@
 
 .footer-title {
     padding-top: 20px;
-}
-
-.footer-title > h1 {
     font-size: 12px;
     line-height: 25px;
     text-transform: uppercase;
     color: #1e2633;
     font-weight: bold;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
 }
 
-.footer-copyright > p {
+.footer-copyright {
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #1e2633;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: bold;
 }

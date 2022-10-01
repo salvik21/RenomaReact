@@ -1,7 +1,8 @@
-.forward-button > img {
+.forward-button-image {
     width: 35px;
     height: 35px;
 }
+
 .forward-button {
     display: flex;
     align-items: center;

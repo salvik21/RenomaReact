@@ -1,6 +1,6 @@
-function ParagraphAtom(props) {
-    return(
-        <p>{props.title}</p>
+function ParagraphAtom({ paragraph, paragraphClass }) {
+    return (
+        <p className={paragraphClass} >{paragraph}</p>
     );
 
 }

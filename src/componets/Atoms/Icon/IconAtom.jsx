@@ -1,6 +1,6 @@
-function Icon(props) {
+function Icon({ src, alt, onClick, iconClass }) {
     return (
-    <img src={props.src} alt={props.alt} onClick={props.onClick} />
+        <img className={iconClass} src={src} alt={alt} onClick={onClick} />
     )
 }
 

@@ -1,7 +1,6 @@
-@import url(./../../../font/Poppins-SemiBold.css);
-@import url(./../../../font/Montserrat-Regular.css);
+@import url(./../../../font/Font.css);
 
-.title-carusel > h1 {
+.title-carusel {
     font-size: 28px;
     letter-spacing: 3px;
     color: #ffffff;
@@ -9,14 +8,14 @@
     padding: 0;
 }
 
-.subtitle-carousel> h3 {
+.subtitle-carousel {
     letter-spacing: 2px;
     color: #985e5b;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
 }
 
-.titls-carousel {
+.titls-carousel-wrapper {
     position: absolute;
     margin-left: 20px;
     top: 200px;

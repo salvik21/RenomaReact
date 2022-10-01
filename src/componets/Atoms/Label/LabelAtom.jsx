@@ -1,5 +1,5 @@
 function LabelAtom(props) {
-    return(
+    return (
         <label>{props.text}</label>
     );
 

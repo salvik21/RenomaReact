@@ -1,6 +1,6 @@
-function SubtitleAtom(props) {
-    return(
-        <h3>{props.subTitle}</h3>
+function SubtitleAtom({ subTitle, subtitleClass }) {
+    return (
+        <h3 className={subtitleClass}>{subTitle}</h3>
     );
 
 }

@@ -1,15 +1,15 @@
 import "./Nav.css";
-import Icons from "./../../Molecules/Icons/Icons";
-import Renoma from "./../../Atoms/LogoAtom/LogoAtom";
+import NavPanel from "./../../Molecules/NavPanel/NavPanel";
+import Logo from "./../../Atoms/Logo/Logo";
 
 function Nav() {
-   return (
+    return (
         <div className="nav-wrapper">
             <div className="nav">
-                <Renoma />
-                <Icons  />
+                <Logo logoClass={"nav-logo"} />
+                <NavPanel />
             </div>
-        </div>  
+        </div>
     );
 }
 

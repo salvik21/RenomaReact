@@ -1,5 +1,5 @@
 function LinkAtom(props) {
-    return(
+    return (
         <a target={props.target} href={props.href}>{props.text}</a>
     );
 

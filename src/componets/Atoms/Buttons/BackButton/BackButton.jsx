@@ -1,12 +1,11 @@
 import "./BackButton.css";
-import Image from "./../../../Atoms/Icon/IconAtom";
 import ForwardImage from "./../../../../image/forward.png";
 
 
 function BackButton() {
-    return(
-        <div className="button">
-            <Image src= {ForwardImage} alt="Imageone"/>
+    return (
+        <div className="back-button">
+            <img className="back-button-image" src={ForwardImage} alt="Imageone"></img>
         </div>
     );
 }

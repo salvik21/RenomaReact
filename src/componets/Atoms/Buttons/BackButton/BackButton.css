@@ -1,10 +1,10 @@
-.button > img {
+.back-button-image {
     transform: rotate(180deg);
     width: 35px;
     height: 35px;
 }
 
-.button {
+.back-button {
     display: flex;
     align-items: center;
     justify-content: center;

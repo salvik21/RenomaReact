@@ -3,13 +3,12 @@
     height: 450px;
 }
 
-.carousel-button {
+.carousel-buttons {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     position: absolute;
     top: 330px;
     margin-left: 20px;
     justify-content: space-between;
     width: 40%;
 }
-

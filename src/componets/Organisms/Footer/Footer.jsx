@@ -1,22 +1,22 @@
 import "./Footer.css";
 import Title from "../../Atoms/Titles/TitleAtom";
-import Logo from "../../Atoms/LogoAtom/LogoAtom";
+import Logo from "../../Atoms/Logo/Logo";
 import SocialNetworksIcons from "../../Molecules/SocialNetworksIcons/SocialNetworksIcons";
 import Paragraph from "../../Atoms/Paragraph/ParagraphAtom";
 
 function Footer() {
-    return(
+    return (
         <div className="footer">
-            <div className="footer-title">
-                <Title  title="Follow US:" />
+            <div>
+                <Title titleClass={"footer-title"} title="Follow US:" />
             </div>
             <SocialNetworksIcons />
-            <Logo />
-            <div className="footer-copyright">
-                <Paragraph  title="Copyright 2015 Renome by estetiq" />
+            <Logo logoClass={"footer-logo"} />
+            <div>
+                <Paragraph paragraphClass={"footer-copyright"} paragraph="Copyright 2015 Renome by estetiq" />
             </div>
         </div>
-    )   
+    )
 }
 
 export default Footer;

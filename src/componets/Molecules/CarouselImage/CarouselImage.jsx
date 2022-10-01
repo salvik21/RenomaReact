@@ -4,9 +4,9 @@ import CaruselImage from "./../../../image/carousel_img_1.png";
 
 
 function CaruselImages() {
-    return(
-        <div className="carusel-image">
-            <Image src= {CaruselImage} alt="Imageone"/>   
+    return (
+        <div className="carusel-image-wrapper">
+            <Image imageClass={"carusel-img"} src={CaruselImage} alt="eggs and chicken" />
         </div>
     );
 }

@@ -5,14 +5,14 @@ import AboutlSecondImage from "./../../../image/about_img_2.png";
 
 
 function AboutImages() {
-    return(
+    return (
         <div className="about-images">
-        <div className="about-first-image">
-            <Image src={AboutFirstImage} alt="ImageOne"/>   
-        </div>
-        <div className="about-second-image">
-            <Image src= {AboutlSecondImage} alt="ImageTwo"/>    
-        </div>
+            <div className="about-first-image">
+                <Image src={AboutFirstImage} alt="ImageOne" />
+            </div>
+            <div className="about-second-image">
+                <Image src={AboutlSecondImage} alt="ImageTwo" />
+            </div>
         </div>
     );
 }

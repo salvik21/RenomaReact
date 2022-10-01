@@ -1,6 +1,6 @@
-function ImageAtom(props) {
+function ImageAtom({ src, alt, imageClass }) {
     return (
-    <img src={props.src} alt={props.alt} />
+        <img className={imageClass} src={src} alt={alt} />
     );
 }
 

@@ -1,6 +1,6 @@
-function TitleAtom(props) {
-    return(
-        <h1>{props.title}</h1>
+function TitleAtom({ title, titleClass }) {
+    return (
+        <h1 className={titleClass}>{title}</h1>
     );
 }
 

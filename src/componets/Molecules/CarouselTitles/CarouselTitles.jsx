@@ -3,13 +3,13 @@ import Title from "../../Atoms/Titles/TitleAtom";
 import Subtitle from "./../../Atoms/Subtile/SubtitleAtom";
 
 function CarouselTitles() {
-    return(
-        <div className="titls-carousel">
-            <div className="title-carusel">
-                <Title  title="made with love" />
+    return (
+        <div className="titls-carousel-wrapper">
+            <div>
+                <Title titleClass={"title-carusel"} title="made with love" />
             </div>
-            <div className="subtitle-carousel">
-            <   Subtitle  subTitle="for you" />
+            <div>
+                <Subtitle subtitleClass={"subtitle-carousel"} subTitle="for you" />
             </div>
         </div>
     );
