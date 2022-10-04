@@ -5,7 +5,7 @@ import Close from "../../Atoms/CloseIcon/CloseIcon";
 import Divider from "../../Atoms/Divider/VerticalDivider";
 import CountLabel from "../../Atoms/CountLabel/CountLabel";
 
-function Icons() {
+function NavPanel() {
     return (
         <div className="icons">
             <Cart />
@@ -16,4 +16,4 @@ function Icons() {
     );
 }
 
-export default Icons;
+export default NavPanel;

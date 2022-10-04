@@ -1,6 +1,8 @@
+import Title from "./../Titles/TitleAtom";
+
 function LogoAtom({ logoClass }) {
     return (
-        <h1 className={logoClass}>Renoma</h1>
+        <Title titleClass={logoClass} title={"Renoma"} />
     );
 }
 

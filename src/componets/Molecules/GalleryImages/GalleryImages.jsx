@@ -17,8 +17,8 @@ function GalleryImages() {
         { id: 6, src: Img6, alt: "6" }
     ]
     return (
-        <ul className="gallery-img-container">
-            {ImgElement.map((item) => <li className="gallery-img-list">
+        <ul className="gallery-image-container">
+            {ImgElement.map((item) => <li className="gallery-image-list">
                 <Image imageClass={"gallery-image"} src={item.src} alt={item.alt} />
             </li>
             )

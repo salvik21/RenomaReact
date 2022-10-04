@@ -1,12 +1,13 @@
 import "./CartIcon.css";
 import CartImage from '../../../image/Cart.png';
+import Image from "./../Image/ImageAtom";
 
 
-function CartIcon({ onClick }) {
+function CartIcon() {
 
     return (
-        <div className="cart-icon-wrapper" >
-            <img className="cart-icon" src={CartImage} alt="Cart Image" onClick={onClick} />
+        <div>
+            <Image imageClass={"cart-icon"} src={CartImage} alt="Cart Image"  />
         </div>
     );
 }

@@ -1,4 +1,4 @@
-.gallery-img-container {
+.gallery-image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,7 +6,7 @@
     padding: 0px;
 }
 
-.gallery-img-list {
+.gallery-image-list {
     list-style-type: none;
     flex-basis: 48%;
 }

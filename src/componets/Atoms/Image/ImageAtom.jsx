@@ -1,6 +1,6 @@
-function ImageAtom({ src, alt, imageClass }) {
+function ImageAtom({ src, alt, imageClass, onClick }) {
     return (
-        <img className={imageClass} src={src} alt={alt} />
+        <img className={imageClass} src={src} alt={alt} onClick={onClick} />
     );
 }
 
