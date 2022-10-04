@@ -1,5 +1,5 @@
 import "./CarouselImage.css";
-import Image from "../../Atoms/Image/ImageAtom";
+import Image from "./../Image/ImageAtom";
 import CaruselImage from "./../../../image/carousel_img_1.png";
 
 

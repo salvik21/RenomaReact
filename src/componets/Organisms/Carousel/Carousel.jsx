@@ -1,5 +1,5 @@
 import "./Carousel.css";
-import CarouselImages from "../../Molecules/CarouselImage/CarouselImage";
+import CarouselImages from "../../Atoms/CarouselImage/CarouselImage";
 import ForwardButton from "../../Atoms/Buttons/ForwardButton/ForwardButton";
 import BackButton from "../../Atoms/Buttons/BackButton/BackButton";
 import CarouselTitles from "../../Molecules/CarouselTitles/CarouselTitles";
