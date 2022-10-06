@@ -1,8 +1,8 @@
 import "./VerticalDivider.css";
 
 function VerticalDivider() {
-    return(
-        <div className="vertical-divider-wrapper"></div>
+    return (
+        <div className="vertical-divider"></div>
     );
 }
 

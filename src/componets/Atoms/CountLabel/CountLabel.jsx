@@ -1,9 +1,10 @@
 import "./CountLabel.css";
+import Label from "./../Label/LabelAtom";
 
 function CountLabel() {
     return (
         <div className="count-label-wrapper">
-            <label>2</label>
+            <Label labelClass={"count-label"} text={"2"} />
         </div>
     );
 }

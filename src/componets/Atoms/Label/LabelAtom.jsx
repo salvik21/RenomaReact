@@ -1,6 +1,6 @@
-function LabelAtom(props) {
+function LabelAtom({text, labelClass}) {
     return (
-        <label>{props.text}</label>
+        <label className={labelClass}>{text}</label>
     );
 }
 
