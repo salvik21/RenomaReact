@@ -1,0 +1,28 @@
+@import url(./../../../font/Font.css);
+
+.gallery {
+    background-color: #fafafa;
+    padding: 40px 10px;
+}
+
+.gallery-title {
+    font-size: 38px;
+    letter-spacing: 8px;
+    color: #1e2633;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 0;
+}
+
+
+
+.gallery-subtitle {
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #985e5b;
+    font-weight: 700;
+    font-family: "Montserrat, sans-serif";
+    text-align: center;
+}

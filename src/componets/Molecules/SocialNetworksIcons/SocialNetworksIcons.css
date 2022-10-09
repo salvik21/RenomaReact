@@ -1,0 +1,10 @@
+.icons-image {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.social-networks-icons {
+    display: flex;
+    justify-content: center;
+}

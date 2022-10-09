@@ -1,0 +1,13 @@
+@import url('../../../font/Font.css');
+
+.count-label {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.count-label-wrapper{
+    padding: 0 5px 3px 5px;
+}

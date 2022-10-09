@@ -1,0 +1,23 @@
+@import url(./../../../font/Font.css);
+
+.title-carousel {
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+}
+
+.subtitle-carousel {
+    letter-spacing: 2px;
+    color: #985e5b;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.titls-carousel-wrapper {
+    position: absolute;
+    margin-left: 20px;
+    top: 200px;
+    z-index: 10;
+}
