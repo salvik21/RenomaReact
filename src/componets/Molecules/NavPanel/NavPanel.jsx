@@ -9,13 +9,13 @@ import CartMenu from "./../../Molecules/CartMenu/CartMenu";
 
 function NavPanel() {
     return (
-        <div className="nanavigation-wrapper">
-        <div className="navigation-bar">
-            <Cart />
-            <CountLabel />
-            <Divider />
-            <Hamburger />
-        </div>
+        <div>
+            <div className="navigation-bar">
+                <Cart />
+                <CountLabel />
+                <Divider />
+                <Hamburger />
+            </div>
             <CartMenu />
         </div>
     );
