@@ -4,7 +4,7 @@ import Logo from "./../../Atoms/Logo/Logo";
 
 function Nav() {
     return (
-        <div className="nav-wrapper">
+        <div>
             <div className="nav">
                 <Logo logoClass={"nav-logo"} />
                 <NavPanel />

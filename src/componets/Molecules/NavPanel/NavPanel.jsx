@@ -4,14 +4,19 @@ import Hamburger from "../../Atoms/HamburgerIcon/HamburgerIcon";
 import Close from "../../Atoms/CloseIcon/CloseIcon";
 import Divider from "../../Atoms/Divider/VerticalDivider";
 import CountLabel from "../../Atoms/CountLabel/CountLabel";
+import CartMenu from "./../../Molecules/CartMenu/CartMenu";
+
 
 function NavPanel() {
     return (
-        <div className="icons">
-            <Cart />
-            <CountLabel />
-            <Divider />
-            <Hamburger />
+        <div>
+            <div className="navigation-bar">
+                <Cart />
+                <CountLabel />
+                <Divider />
+                <Hamburger />
+            </div>
+            <CartMenu />
         </div>
     );
 }

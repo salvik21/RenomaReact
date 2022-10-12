@@ -1,6 +1,6 @@
-function LinkAtom(props) {
+function LinkAtom({linkClass, target, href, text}) {
     return (
-        <a target={props.target} href={props.href}>{props.text}</a>
+        <a className={linkClass} target={target} href={href}>{text}</a>
     );
 }
 

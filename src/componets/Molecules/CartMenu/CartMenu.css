@@ -1,0 +1,27 @@
+.cart-menu-wrapper {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 58px;
+    right: 43px;
+    width: 200px;
+    height: 125px;
+    background-color: #ffffff;
+    z-index: 30;
+}
+
+.cart-menu-button {
+    color: #000000;
+    display: block;
+    padding: 10px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cart-menu-buttons-lists {
+    background-color: #ffffff;
+    border: solid #f7f7f7 1px;
+}
