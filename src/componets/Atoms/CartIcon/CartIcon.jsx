@@ -3,11 +3,11 @@ import CartImage from '../../../image/Cart.png';
 import Image from "./../Image/ImageAtom";
 
 
-function CartIcon() {
+function CartIcon({ onClick, refCartIcon }) {
 
     return (
         <div>
-            <Image imageClass={"cart-icon"} src={CartImage} alt="Cart Image"  />
+            <Image refImage={refCartIcon} imageClass={"cart-icon"} src={CartImage} alt="Cart Image" onClick={onClick} />
         </div>
     );
 }

@@ -2,7 +2,7 @@ import "./CartMenu.css";
 import Link from "./../../Atoms/Link/LinkAtom";
 import Label from "./../../Atoms/Label/LabelAtom"
 
-function CartMenu() {
+function CartMenu({ showMenu, refCartMenu }) {
     const LinkElement = [
         { id: 10, text: "$ 45.52", atvButton: false },
         { id: 11, href: "#", text: "View Cart", atvButton: true },
@@ -10,7 +10,7 @@ function CartMenu() {
     ]
 
     return (
-        <div className="cart-menu-wrapper">
+        <div ref={refCartMenu} className="cart-menu-wrapper" style={showMenu} >
             {LinkElement.map((item) =>
                 <div className="cart-menu-buttons-lists">
                     {!item.atvButton ?
