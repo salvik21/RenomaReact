@@ -10,7 +10,7 @@ function CartMenu({ cartMenuClass, refCartMenu }) {
     ]
 
     return (
-        <div ref={refCartMenu} className={cartMenuClass} >
+        <div ref={refCartMenu} className={"cart-menu-wrapper" + cartMenuClass} >
             {LinkElement.map((item) =>
                 <div className="cart-menu-buttons-lists">
                     {!item.atvButton ?

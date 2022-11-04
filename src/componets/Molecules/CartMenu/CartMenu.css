@@ -13,3 +13,15 @@
     background-color: #ffffff;
     border: solid #f7f7f7 1px;
 }
+
+.cart-menu-wrapper {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 58px;
+    right: 43px;
+    width: 200px;
+    height: 125px;
+    background-color: #ffffff;
+    z-index: 30;
+}
