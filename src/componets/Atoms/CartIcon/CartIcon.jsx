@@ -3,7 +3,7 @@ import CartImage from '../../../image/Cart.png';
 import Image from "./../Image/ImageAtom";
 
 
-function CartIcon({ onClick, refCartIcon }) {
+function CartIcon({ onClick, refCartIcon, cartClass }) {
 
     return (
         <div>
