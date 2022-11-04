@@ -41,7 +41,7 @@ function NavPanel() {
                 <Divider />
                 <Hamburger />
             </div>
-            <CartMenu refCartMenu={menuRef} cartMenuClass={showCartMenu ? "" : "hide"} />
+            <CartMenu refCartMenu={menuRef} cartMenuClass={showCartMenu ? "" : "-hide"} />
         </div>
     );
 }
