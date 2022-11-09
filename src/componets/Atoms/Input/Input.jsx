@@ -1,6 +1,6 @@
-function IputAtom({ inputType, inputName, inputPlaceholderText, inputClass }) {
+function IputAtom({ type, name, placeholderText, className }) {
     return (
-        <input className={inputClass} type={inputType} name={inputName} autocomplete="off" placeholder={inputPlaceholderText} />
+        <input className={className} type={type} name={name} autocomplete="off" placeholder={placeholderText} />
     );
 }
 

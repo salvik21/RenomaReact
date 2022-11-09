@@ -23,7 +23,7 @@ function HamburgerMenu() {
         <div className={`hamburger-menu-wrapper`} >
             <div className="hamburger-menu-search-bar-wrapper">
                 <div className="hamburger-menu-search-bar-input-field">
-                    <InputField inputClass={"input-field"} inputType={"text"} inputName={"search"} inputPlaceholderText={"Search"} />
+                    <InputField className={"input-field"} type={"text"} name={"search"} placeholderText={"Search"} />
                 </div>
                 <div className="hamburger-menu-search-bar-image-wrapper">
                     <Image imageClass={"search-button-image"} src={SerchImage} alt="Search icon image" />
