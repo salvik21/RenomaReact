@@ -1,0 +1,108 @@
+.hamburger-menu-button {
+    color: #000000;
+    padding: 23px 0 23px 20px;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    border-top: 2px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu-wrapper {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    height: 565px;
+    background-color: #ffffff;
+    z-index: 30;
+}
+
+.hamburger-submenu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    border-top: 2px solid #f1f1f1;
+    height: 60px;
+}
+
+.hamburger-menu-subbutton {
+    color: #000000;
+    padding: 10px 0 10px 20px;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.hamburger-submenu-button-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    margin-right: 20px;
+    height: 48px;
+    border: solid #a49d9d 1px
+}
+
+/* .forward-button-image {
+    width: 25px;
+    height: 25px
+} */
+
+.nav__hamburger-menu-search-bar-input-field {
+    flex: auto;
+    margin: 0 20px;
+}
+
+.input-field {
+    outline: 0;
+    width: 100%;
+    height: 60px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+.input-field:active {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hamburger-menu-search-bar-input-field {
+    flex: auto;
+    margin: 0 20px;
+}
+
+.search-button-image {
+    width: 15px;
+    height: 15px;
+}
+
+.hamburger-menu-search-bar-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    margin-right: 20px;
+    height: 40px;
+}
+
+.hamburger-menu-search-bar-wrapper {
+    display: flex;
+    align-items: center;
+}

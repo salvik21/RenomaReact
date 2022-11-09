@@ -6,7 +6,7 @@ import Divider from "../../Atoms/Divider/VerticalDivider";
 import CountLabel from "../../Atoms/CountLabel/CountLabel";
 import CartMenu from "./../../Molecules/CartMenu/CartMenu";
 import { useState, useRef, useEffect } from "react";
-
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 function NavPanel() {
     const menuRef = useRef(null);
@@ -34,7 +34,7 @@ function NavPanel() {
 
     useOutsideClick(menuRef, cartIconRef);
     return (
-        <div>
+        <>
             <div className="navigation-bar">
                 <Cart refCartIcon={cartIconRef} onClick={() => setShowCartMenu(!showCartMenu)} />
                 <CountLabel />
@@ -42,7 +42,8 @@ function NavPanel() {
                 <Hamburger />
             </div>
             <CartMenu refCartMenu={menuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
-        </div>
+            <HamburgerMenu />
+        </>
     );
 }
 

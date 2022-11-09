@@ -6,9 +6,9 @@ import Image from "./../Image/ImageAtom";
 function CartIcon({ onClick, refCartIcon }) {
 
     return (
-        <div>
+        <>
             <Image refImage={refCartIcon} imageClass={"cart-icon"} src={CartImage} alt="Cart Image" onClick={onClick} />
-        </div>
+        </>
     );
 }
 
