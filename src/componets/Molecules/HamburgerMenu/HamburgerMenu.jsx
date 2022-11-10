@@ -3,7 +3,7 @@ import Link from "./../../Atoms/Link/LinkAtom";
 import Label from "./../../Atoms/Label/LabelAtom";
 import ForwardBlackButton from "./../../../image/forward_black.png";
 import Image from "./../../Atoms/Image/ImageAtom";
-import InputField from "../../Atoms/Input/Input";
+import InputForm from "../../Atoms/InputForm/InputForm";
 import SerchImage from "./../../../image/search_icon.png"
 
 
@@ -23,7 +23,7 @@ function HamburgerMenu() {
         <div className={`hamburger-menu-wrapper`} >
             <div className="hamburger-menu-search-bar-wrapper">
                 <div className="hamburger-menu-search-bar-input-field">
-                    <InputField className={"input-field"} type={"text"} name={"search"} placeholderText={"Search"} />
+                    <InputForm className={"input-field"} type={"text"} name={"search"} placeholderText={"Search"} />
                 </div>
                 <div className="hamburger-menu-search-bar-image-wrapper">
                     <Image imageClass={"search-button-image"} src={SerchImage} alt="Search icon image" />
