@@ -4,12 +4,12 @@ import Logo from "./../../Atoms/Logo/Logo";
 
 function Nav() {
     return (
-        <div>
+        <>
             <div className="nav">
                 <Logo logoClass={"nav-logo"} />
                 <NavPanel />
             </div>
-        </div>
+        </>
     );
 }
 

@@ -1,6 +1,6 @@
 import "./CartMenu.css";
 import Link from "./../../Atoms/Link/LinkAtom";
-import Label from "./../../Atoms/Label/LabelAtom"
+import Label from "./../../Atoms/Label/LabelAtom";
 
 function CartMenu({ cartMenuClass, refCartMenu }) {
     const LinkElement = [

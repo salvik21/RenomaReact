@@ -4,9 +4,9 @@ import Image from "./../Image/ImageAtom";
 
 function CloseIcon() {
     return (
-        <div>
+        <>
             <Image imageClass={"close-icon"} src={CloseImage} alt="Close Image" />
-        </div>
+        </>
     );
 }
 
