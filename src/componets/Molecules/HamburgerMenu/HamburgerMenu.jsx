@@ -7,7 +7,7 @@ import Input from "../../Atoms/Input/Input";
 import SerchImage from "./../../../image/search_icon.png"
 
 
-function HamburgerMenu() {
+function HamburgerMenu({ refHamburgerMenu, hamburgerMenuClass }) {
     const LinkElement = [
         { id: 13, href: "#", text: "HOME", isSubMenu: false },
         { id: 14, href: "#", text: "ABOUT", isSubMenu: false },
@@ -20,7 +20,7 @@ function HamburgerMenu() {
     ]
 
     return (
-        <div className={`hamburger-menu-wrapper`} >
+        <div ref={refHamburgerMenu} className={`hamburger-menu-wrapper ${hamburgerMenuClass}`} >
             <div className="hamburger-menu-search-bar-wrapper">
                 <div className="hamburger-menu-search-bar-input-field">
                     <Input className={"input-field"} type={"text"} name={"search"} placeholderText={"Search"} />

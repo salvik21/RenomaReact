@@ -15,8 +15,8 @@
 
 .hamburger-menu-wrapper {
     position: absolute;
-    display: block;
     margin: 0;
+    /* display: none; */
     padding: 0;
     top: 58px;
     left: 0;
