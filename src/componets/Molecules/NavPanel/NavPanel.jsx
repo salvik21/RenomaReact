@@ -18,13 +18,11 @@ function NavPanel() {
     const [showCartMenu, setShowCartMenu] = useState(false);
     const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
 
-     function useOutsideClickCart(refIcon, refMenu) {
+    function useOutsideClick(refIcon, refMenu, setShowMenu) {
         useEffect(() => {
             function handleClickOutside(event) {
-                if (refIcon.current && !refIcon.current.contains(event.target)) {
-                    if (refMenu.current && !refMenu.current.contains(event.target)) {
-                        setShowCartMenu(false);
-                    }
+                if ((refIcon.current && !refIcon.current.contains(event.target)) && (refMenu.current && !refMenu.current.contains(event.target))) {
+                    setShowMenu(false);
                 }
             }
 
@@ -35,26 +33,8 @@ function NavPanel() {
         }, [refMenu]);
     }
 
-    function useOutsideClickHamburger(refIcon, refMenu) {
-        useEffect(() => {
-            function handleClickOutside(event) {
-                if (refIcon.current && !refIcon.current.contains(event.target)) {
-                    if (refMenu.current && !refMenu.current.contains(event.target)) {
-                        setShowHamburgerMenu(false);
-                    }
-                }
-            }
-
-            document.addEventListener("mousedown", handleClickOutside);
-            return () => {
-                document.removeEventListener("mousedown", handleClickOutside);
-            };
-        }, [refMenu]);
-    }
-
-
-    useOutsideClickCart(cartIconRef, cartMenuRef);
-    useOutsideClickHamburger(hamburgerIconRef, hamburgerMenuRef);
+    useOutsideClick(cartIconRef, cartMenuRef, setShowCartMenu);
+    useOutsideClick(hamburgerIconRef, hamburgerMenuRef, setShowHamburgerMenu);
 
     return (
         <>
@@ -65,7 +45,7 @@ function NavPanel() {
                 <Hamburger refHamburgerIcon={hamburgerIconRef} onClickHamburgerIcon={() => setShowHamburgerMenu(!showHamburgerMenu)} />
             </div>
             <CartMenu refCartMenu={cartMenuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
-            <HamburgerMenu refHamburgerMenu={hamburgerMenuRef}  hamburgerMenuClass={showHamburgerMenu ? "" : "hidden"}/>
+            <HamburgerMenu refHamburgerMenu={hamburgerMenuRef} hamburgerMenuClass={showHamburgerMenu ? "" : "hidden"} />
         </>
     );
 }
