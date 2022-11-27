@@ -41,7 +41,6 @@ function NavPanel() {
             <div className="navigation-bar">
                 <Cart refCartIcon={cartIconRef} onClickCartIcon={() => setShowCartMenu(!showCartMenu)} />
                 <CountLabel />
-                <Divider />
                 <Hamburger refHamburgerIcon={hamburgerIconRef} onClickHamburgerIcon={() => setShowHamburgerMenu(!showHamburgerMenu)} />
             </div>
             <CartMenu refCartMenu={cartMenuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
