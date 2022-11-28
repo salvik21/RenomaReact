@@ -1,7 +1,6 @@
 import "./NavPanel.css";
 import Cart from "../../Atoms/CartIcon/CartIcon";
-import Hamburger from "../../Atoms/HamburgerIcon/HamburgerIcon";
-import Close from "../../Atoms/CloseIcon/CloseIcon";
+import HamburgerMenuIcons from "../../Atoms/HamburgerIcon/HamburgeMenurIcons";
 import Divider from "../../Atoms/Divider/VerticalDivider";
 import CountLabel from "../../Atoms/CountLabel/CountLabel";
 import CartMenu from "./../../Molecules/CartMenu/CartMenu";
@@ -42,7 +41,7 @@ function NavPanel() {
                 <Cart refCartIcon={cartIconRef} onClickCartIcon={() => setShowCartMenu(!showCartMenu)} />
                 <CountLabel />
                 <Divider />
-                <Hamburger refHamburgerIcon={hamburgerIconRef} onClickHamburgerIcon={() => setShowHamburgerMenu(!showHamburgerMenu)} />
+                <HamburgerMenuIcons hamburgerMenuIcons={!showHamburgerMenu} refHamburgerMenuIcons={hamburgerIconRef} onClickHamburgerMenuIcons={() => setShowHamburgerMenu(!showHamburgerMenu)} />
             </div>
             <CartMenu refCartMenu={cartMenuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
             <HamburgerMenu refHamburgerMenu={hamburgerMenuRef} hamburgerMenuClass={showHamburgerMenu ? "" : "hidden"} />
