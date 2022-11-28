@@ -9,18 +9,20 @@ import { useState, useRef, useEffect } from "react";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 function NavPanel() {
-    const menuRef = useRef(null);
+    const cartMenuRef = useRef(null);
     const cartIconRef = useRef(null);
 
+    const hamburgerMenuRef = useRef(null);
+    const hamburgerIconRef = useRef(null);
+
     const [showCartMenu, setShowCartMenu] = useState(false);
-    function hideMenu() { setShowCartMenu(false) }
-    function useOutsideClick(refIcon, refMenu) {
+    const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+
+    function useOutsideClick(refIcon, refMenu, setShowMenu) {
         useEffect(() => {
             function handleClickOutside(event) {
-                if (refIcon.current && !refIcon.current.contains(event.target)) {
-                    if (refMenu.current && !refMenu.current.contains(event.target)) {
-                        hideMenu();
-                    }
+                if ((refIcon.current && !refIcon.current.contains(event.target)) && (refMenu.current && !refMenu.current.contains(event.target))) {
+                    setShowMenu(false);
                 }
             }
 
@@ -31,18 +33,19 @@ function NavPanel() {
         }, [refMenu]);
     }
 
+    useOutsideClick(cartIconRef, cartMenuRef, setShowCartMenu);
+    useOutsideClick(hamburgerIconRef, hamburgerMenuRef, setShowHamburgerMenu);
 
-    useOutsideClick(menuRef, cartIconRef);
     return (
         <>
             <div className="navigation-bar">
-                <Cart refCartIcon={cartIconRef} onClick={() => setShowCartMenu(!showCartMenu)} />
+                <Cart refCartIcon={cartIconRef} onClickCartIcon={() => setShowCartMenu(!showCartMenu)} />
                 <CountLabel />
                 <Divider />
-                <Hamburger />
+                <Hamburger refHamburgerIcon={hamburgerIconRef} onClickHamburgerIcon={() => setShowHamburgerMenu(!showHamburgerMenu)} />
             </div>
-            <CartMenu refCartMenu={menuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
-            <HamburgerMenu />
+            <CartMenu refCartMenu={cartMenuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
+            <HamburgerMenu refHamburgerMenu={hamburgerMenuRef} hamburgerMenuClass={showHamburgerMenu ? "" : "hidden"} />
         </>
     );
 }

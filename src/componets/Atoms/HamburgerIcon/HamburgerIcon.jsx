@@ -2,10 +2,10 @@ import "./HamburgerIcon.css";
 import HamburgerImage from '../../../image/Hamburger.png';
 import Image from "./../Image/ImageAtom";
 
-function HamburgerIcon() {
+function HamburgerIcon({refHamburgerIcon, onClickHamburgerIcon}) {
     return (
         <>
-            <Image imageClass={"hamburger-icon"} src={HamburgerImage} alt="Hamburger Image" />
+            <Image refImage={refHamburgerIcon} imageClass={"hamburger-icon"} src={HamburgerImage} alt="Hamburger Image" onClick={onClickHamburgerIcon} />
         </>
     );
 }

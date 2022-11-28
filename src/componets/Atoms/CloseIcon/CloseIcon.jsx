@@ -2,10 +2,10 @@ import "./CloseIcon.css";
 import CloseImage from '../../../image/CloseIcon.png';
 import Image from "./../Image/ImageAtom";
 
-function CloseIcon() {
+function CloseIcon({refCloseIcon, onClick}) {
     return (
         <>
-            <Image imageClass={"close-icon"} src={CloseImage} alt="Close Image" />
+            <Image refImage={refCloseIcon} imageClass={"close-icon"} src={CloseImage} alt="Close Image" onClick={onClick} />
         </>
     );
 }
