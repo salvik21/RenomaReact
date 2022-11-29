@@ -6,6 +6,7 @@ import CountLabel from "../../Atoms/CountLabel/CountLabel";
 import CartMenu from "./../../Molecules/CartMenu/CartMenu";
 import { useState, useRef, useEffect } from "react";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import SubMenu from "../HamburgerSubmenu/HamburgerSubmenu";
 
 function NavPanel() {
     const cartMenuRef = useRef(null);
@@ -45,6 +46,7 @@ function NavPanel() {
             </div>
             <CartMenu refCartMenu={cartMenuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
             <HamburgerMenu refHamburgerMenu={hamburgerMenuRef} hamburgerMenuClass={showHamburgerMenu ? "" : "hidden"} />
+            <SubMenu />
         </>
     );
 }

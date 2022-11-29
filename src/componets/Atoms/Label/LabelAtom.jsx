@@ -1,4 +1,4 @@
-function LabelAtom({text, labelClass}) {
+function LabelAtom({ text, labelClass }) {
     return (
         <label className={labelClass}>{text}</label>
     );
