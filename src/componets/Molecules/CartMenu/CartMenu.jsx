@@ -14,8 +14,8 @@ function CartMenu({ cartMenuClass, refCartMenu }) {
             {LinkElement.map((item) =>
                 <div className="cart-menu-buttons-lists">
                     {!item.atvButton ?
-                        <Label labelClass={"cart-menu-button"} text={item.text} /> :
-                        <Link linkClass={"cart-menu-button"} href={item.href} text={item.text} />}
+                        <Label key={item.id} labelClass={"cart-menu-button"} text={item.text} /> :
+                        <Link key={item.id} linkClass={"cart-menu-button"} href={item.href} text={item.text} />}
                 </div>
             )
             }

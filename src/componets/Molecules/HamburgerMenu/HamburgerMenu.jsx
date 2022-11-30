@@ -33,14 +33,14 @@ function HamburgerMenu({ refHamburgerMenu, hamburgerMenuClass }) {
                 <>
                     {item.isSubMenu ?
                         <div className="hamburger-submenu-button">
-                            <Label labelClass={"hamburger-menu-subbutton"} text={item.text} />
+                            <Label key={item.id} labelClass={"hamburger-menu-subbutton"} text={item.text} />
                             <div className="hamburger-submenu-button-image">
                                 <Image imageClass={"forward-button-image"} src={ForwardBlackButton} alt="Forward Image Black" />
                             </div>
                         </div>
                         :
                         <div className="hamburger-menu-buttons">
-                            <Link linkClass={"hamburger-menu-button"} href={item.href} text={item.text} />
+                            <Link key={item.id} linkClass={"hamburger-menu-button"} href={item.href} text={item.text} />
                         </div>
                     }
                 </>
