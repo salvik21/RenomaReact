@@ -15,8 +15,11 @@ function NavPanel() {
     const hamburgerMenuRef = useRef(null);
     const hamburgerIconRef = useRef(null);
 
+    const submenuRef = useRef(null);
+
     const [showCartMenu, setShowCartMenu] = useState(false);
     const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+    const [showSubmenu, setShowSubmenu] = useState(false);
 
     function useOutsideClick(refIcon, refMenu, setShowMenu) {
         useEffect(() => {
@@ -34,7 +37,8 @@ function NavPanel() {
     }
 
     useOutsideClick(cartIconRef, cartMenuRef, setShowCartMenu);
-    useOutsideClick(hamburgerIconRef, hamburgerMenuRef, setShowHamburgerMenu);
+    useOutsideClick(hamburgerIconRef, hamburgerMenuRef, setShowHamburgerMenu)
+    useOutsideClick(hamburgerIconRef, submenuRef, setShowSubmenu);
 
     return (
         <>
@@ -42,11 +46,17 @@ function NavPanel() {
                 <Cart refCartIcon={cartIconRef} onClickCartIcon={() => setShowCartMenu(!showCartMenu)} />
                 <CountLabel />
                 <Divider />
-                <HamburgerMenuIcons hamburgerMenuIcons={!showHamburgerMenu} refHamburgerMenuIcons={hamburgerIconRef} onClickHamburgerMenuIcons={() => setShowHamburgerMenu(!showHamburgerMenu)} />
+                <HamburgerMenuIcons hamburgerMenuIcons={!(showHamburgerMenu || showSubmenu)} refHamburgerMenuIcons={hamburgerIconRef} onClickHamburgerMenuIcons={() => {
+                    if (!showSubmenu) {
+                        setShowHamburgerMenu(!showHamburgerMenu)
+                    }
+                    setShowSubmenu(false)
+                }
+                } />
             </div>
             <CartMenu refCartMenu={cartMenuRef} cartMenuClass={showCartMenu ? "" : "hidden"} />
-            <HamburgerMenu refHamburgerMenu={hamburgerMenuRef} hamburgerMenuClass={showHamburgerMenu ? "" : "hidden"} />
-            <SubMenu />
+            <HamburgerMenu refHamburgerMenu={hamburgerMenuRef} hamburgerMenuClass={showHamburgerMenu ? "" : "hidden"} onClickForwardButton={() => { setShowHamburgerMenu(!showHamburgerMenu); setShowSubmenu(!showSubmenu); }} />
+            <SubMenu refSubmenu={submenuRef} HamburgerSubmenuClass={showSubmenu ? "" : "hidden"} onClickBackButton={() => { setShowHamburgerMenu(!showHamburgerMenu); setShowSubmenu(!showSubmenu) }} />
         </>
     );
 }

@@ -7,7 +7,7 @@ import Input from "../../Atoms/Input/Input";
 import SerchImage from "./../../../image/search_icon.png"
 
 
-function HamburgerMenu({ refHamburgerMenu, hamburgerMenuClass }) {
+function HamburgerMenu({ refHamburgerMenu, hamburgerMenuClass, onClickForwardButton }) {
     const LinkElement = [
         { id: 13, href: "#", text: "HOME", isSubMenu: false },
         { id: 14, href: "#", text: "ABOUT", isSubMenu: false },
@@ -32,14 +32,14 @@ function HamburgerMenu({ refHamburgerMenu, hamburgerMenuClass }) {
             {LinkElement.map((item) =>
                 <>
                     {item.isSubMenu ?
-                        <div className="hamburger-submenu-button">
+                        <div key={item.id} className="hamburger-submenu-button">
                             <Label key={item.id} labelClass={"hamburger-menu-subbutton"} text={item.text} />
-                            <div className="hamburger-submenu-button-image">
-                                <Image imageClass={"forward-button-image"} src={ForwardBlackButton} alt="Forward Image Black" />
+                            <div key={item.id} className="hamburger-submenu-button-image">
+                                <Image key={item.id} imageClass={"forward-button-image"} src={ForwardBlackButton} alt="Forward Image Black" onClick={onClickForwardButton} />
                             </div>
                         </div>
                         :
-                        <div className="hamburger-menu-buttons">
+                        <div key={item.id} className="hamburger-menu-buttons">
                             <Link key={item.id} linkClass={"hamburger-menu-button"} href={item.href} text={item.text} />
                         </div>
                     }
