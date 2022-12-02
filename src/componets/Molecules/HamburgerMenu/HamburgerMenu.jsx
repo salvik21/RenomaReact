@@ -26,21 +26,21 @@ function HamburgerMenu({ refHamburgerMenu, hamburgerMenuClass, onClickForwardBut
                     <Input className={"input-field"} type={"text"} name={"search"} placeholderText={"Search"} />
                 </div>
                 <div className="hamburger-menu-search-bar-image-wrapper">
-                    <Image imageClass={"search-button-image"} src={SerchImage} alt="Search icon image" />
+                    <Image imageClass={"search-button-image"} imageSrc={SerchImage} imageAlt="Search icon image" />
                 </div>
             </div>
             {LinkElement.map((item) =>
                 <>
                     {item.isSubMenu ?
-                        <div key={item.id} className="hamburger-submenu-button">
-                            <Label key={item.id} labelClass={"hamburger-menu-subbutton"} text={item.text} />
-                            <div key={item.id} className="hamburger-submenu-button-image">
-                                <Image key={item.id} imageClass={"forward-button-image"} src={ForwardBlackButton} alt="Forward Image Black" onClick={onClickForwardButton} />
+                        <div key={item.id + 100} className="hamburger-submenu-button">
+                            <Label key={item.id + 200} labelClass={"hamburger-menu-subbutton"} text={item.text} />
+                            <div key={item.id + 300} className="hamburger-submenu-button-image">
+                                <Image key={item.id + 400} imageClass={"forward-button-image"} imageSrc={ForwardBlackButton} imageAlt="Forward Image Black" imageOnClick={onClickForwardButton} />
                             </div>
                         </div>
                         :
-                        <div key={item.id} className="hamburger-menu-buttons">
-                            <Link key={item.id} linkClass={"hamburger-menu-button"} href={item.href} text={item.text} />
+                        <div key={item.id + 500} className="hamburger-menu-buttons">
+                            <Link key={item.id + 600} linkClass={"hamburger-menu-button"} href={item.href} text={item.text} />
                         </div>
                     }
                 </>

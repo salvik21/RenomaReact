@@ -8,10 +8,10 @@ function AboutImages() {
     return (
         <div className="about-images">
             <div className="about-first-image">
-                <Image src={AboutFirstImage} alt="ImageOne" />
+                <Image imageSrc={AboutFirstImage} imageAlt="ImageOne" />
             </div>
             <div className="about-second-image">
-                <Image src={AboutlSecondImage} alt="ImageTwo" />
+                <Image imageSrc={AboutlSecondImage} imageAlt="ImageTwo" />
             </div>
         </div>
     );

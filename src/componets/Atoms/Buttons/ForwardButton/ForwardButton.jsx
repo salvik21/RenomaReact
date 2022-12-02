@@ -5,7 +5,7 @@ import Image from "./../../Image/ImageAtom";
 function ForwardButton() {
     return (
         <div className="forward-button">
-            <Image imageClass={"forward-button-image"} src={ForwardImage} alt="Imageone" />
+            <Image imageClass={"forward-button-image"} imageSrc={ForwardImage} imageAlt="Imageone" />
         </div>
     );
 }

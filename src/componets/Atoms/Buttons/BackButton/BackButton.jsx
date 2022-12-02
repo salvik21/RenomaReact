@@ -5,7 +5,7 @@ import Image from "./../../Image/ImageAtom";
 function BackButton() {
     return (
         <div className="back-button">
-            <Image imageClass={"back-button-image"} src={ForwardImage} alt="Imageone" />
+            <Image imageClass={"back-button-image"} imageSrc={ForwardImage} imageAlt="Imageone" />
         </div>
     );
 }
