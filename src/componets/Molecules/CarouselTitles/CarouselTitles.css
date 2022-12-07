@@ -1,23 +1,32 @@
-@import url(./../../../font/Font.css);
+@import url('./../../../font/Font.css');
 
-.title-carousel {
-    font-size: 28px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-}
-
-.subtitle-carousel {
-    letter-spacing: 2px;
-    color: #985e5b;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-}
-
-.titls-carousel-wrapper {
+.carousel-titls-wrapper {
+    display: flex;
+    top: 180px;
+    width: 300%;
+    flex: 1;
+    transition: all ease 0.8s;
     position: absolute;
-    margin-left: 20px;
-    top: 200px;
-    z-index: 10;
+}
+
+.carousel-titles-line {
+    height: 140px;
+    width: 33.33%;
+    padding-left: 20px;
+}
+
+.carousel-title {
+    color: #ffffff;
+    font-size: 27px;
+    font-family: Poppins, sans-serif;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+}
+
+.carousel-subtitle {
+    color: #aa6d6d;
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    word-spacing: 7px;
+    letter-spacing: 3px;
 }

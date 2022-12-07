@@ -12,9 +12,9 @@ function CartMenu({ cartMenuClass, refCartMenu }) {
     return (
         <div ref={refCartMenu} className={`cart-menu-wrapper ${cartMenuClass}`} >
             {LinkElement.map((item) =>
-                <div key={item.id} className="cart-menu-buttons-lists">
+                <div key={item.id + 100} className="cart-menu-buttons-lists">
                     {!item.atvButton ?
-                        <Label key={item.id} labelClass={"cart-menu-button"} text={item.text} /> :
+                        <Label key={item.id + 200} labelClass={"cart-menu-button"} text={item.text} /> :
                         <Link key={item.id} linkClass={"cart-menu-button"} href={item.href} text={item.text} />}
                 </div>
             )

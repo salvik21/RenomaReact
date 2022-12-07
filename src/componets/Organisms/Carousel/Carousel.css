@@ -3,6 +3,13 @@
     height: 450px;
 }
 
+.carousel-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
 .carousel-buttons {
     display: flex;
     flex-wrap: wrap;

@@ -6,7 +6,7 @@ import Image from "../Image/ImageAtom";
 function HamburgerIcon({ refHamburgerMenuIcons, onClickHamburgerMenuIcons, hamburgerMenuIcons }) {
     return (
         <>
-            <Image refImage={refHamburgerMenuIcons} imageClass={"hamburger-close-icons"} src={hamburgerMenuIcons ? HamburgerImage : CloseImage} alt="Hamburger menu icon " onClick={onClickHamburgerMenuIcons} />
+            <Image refImage={refHamburgerMenuIcons} imageClass={"hamburger-close-icons"} imageSrc={hamburgerMenuIcons ? HamburgerImage : CloseImage} imagealt="Hamburger menu icon " imageOnClick={onClickHamburgerMenuIcons} />
         </>
     );
 }
