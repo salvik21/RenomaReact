@@ -23,10 +23,10 @@ function HamburgerMenu({ refHamburgerMenu, hamburgerMenuClass, onClickForwardBut
         <div ref={refHamburgerMenu} className={`hamburger-menu-wrapper ${hamburgerMenuClass}`} >
             <div className="hamburger-menu-search-bar-wrapper">
                 <div className="hamburger-menu-search-bar-input-field">
-                    <Input className={"input-field"} type={"text"} name={"search"} placeholderText={"Search"} />
+                    <Input key={300} className={"input-field"} type={"text"} name={"search"} placeholderText={"Search"} />
                 </div>
                 <div className="hamburger-menu-search-bar-image-wrapper">
-                    <Image imageClass={"search-button-image"} imageSrc={SerchImage} imageAlt="Search icon image" />
+                    <Image key={400} imageClass={"search-button-image"} imageSrc={SerchImage} imageAlt="Search icon image" />
                 </div>
             </div>
             {LinkElement.map((item) =>

@@ -13,7 +13,7 @@ function SocIcons() {
     return (
         <div className="social-networks-icons">
             {ImgElement.map((item) =>
-                <a key={item.id+100} target={item.target} href={item.href}> <Image key={item.id} imageClass={"icons-image"} imageSrc={item.src} ImageAlt={item.alt} />
+                <a key={item.id+100} target={item.target} href={item.href}> <Image key={item.id} imageClass={"icons-image"} imageSrc={item.src} imageAlt={item.alt} />
                 </a>
             )}
         </div>
