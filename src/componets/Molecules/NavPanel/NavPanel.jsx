@@ -47,9 +47,7 @@ function NavPanel() {
                 <CountLabel />
                 <Divider />
                 <HamburgerMenuIcons hamburgerMenuIcons={!(showHamburgerMenu || showSubmenu)} refHamburgerMenuIcons={hamburgerIconRef} onClickHamburgerMenuIcons={() => {
-                    if (!showSubmenu) {
-                        setShowHamburgerMenu(!showHamburgerMenu)
-                    }
+                   !showSubmenu && setShowHamburgerMenu(!showHamburgerMenu)
                     setShowSubmenu(false)
                 }
                 } />
